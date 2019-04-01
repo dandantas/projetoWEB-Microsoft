@@ -1,4 +1,18 @@
+body{
+    margin: 0;
+}
+
 .wrapper{
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 90%;
+}
+.wrapper div{
+    float: left;
+}
+
+.bigImage{
+    width: 100%; 
+    object-fit: cover;
+    height: auto;
+    margin: 0 auto;
 }
