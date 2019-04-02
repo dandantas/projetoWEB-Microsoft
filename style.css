@@ -1,7 +1,15 @@
 body{
     margin: 0;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
 }
-
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 0;
+    padding: 1px 12px 2px 0; 
+    margin: 37px 0 0;
+}
 .wrapper{
     margin: 0 auto;
     max-width: 75%;
@@ -31,9 +39,16 @@ body{
     width: 25%;
     padding: 32px 12px;
     box-sizing: border-box;
+    
+}
+.content p{
+    padding: 2px 2px 0 0;
 }
 .content img{
     width: 100%;
     height: auto;
 }
-
+.content a{
+    display: inline-block;
+    color: hsl(206, 100%, 36%);
+}
