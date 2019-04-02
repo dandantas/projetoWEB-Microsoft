@@ -12,7 +12,7 @@ h3{
 }
 .wrapper{
     margin: 0 auto;
-    max-width: 75%;
+    max-width: 85%;
 }
 
 .clearfix{
@@ -26,12 +26,12 @@ h3{
 }
 .header{
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 6%;
 }
 .section{
     float: left;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 6%;
 }
 
 .content{
@@ -48,7 +48,27 @@ h3{
     width: 100%;
     height: auto;
 }
-.content a{
+.content a span{
     display: inline-block;
     color: hsl(206, 100%, 36%);
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 600;
+    border-bottom: 0px solid;
+    padding-bottom: 2px;
+    transition: all .3s ease-in;
 }
+
+.content a span:hover{
+    border-bottom: 2px solid;
+    margin-right: 15px;
+}
+
+.content a{
+    display: inline-block;
+    font-weight: 600;
+    color: hsl(206, 100%, 36%);
+    text-decoration: none;
+}
+
+
