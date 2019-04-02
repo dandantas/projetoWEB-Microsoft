@@ -4,15 +4,36 @@ body{
 
 .wrapper{
     margin: 0 auto;
-    max-width: 90%;
-}
-.wrapper div{
-    float: left;
+    max-width: 75%;
 }
 
+.clearfix{
+    clear: both;
+}
 .bigImage{
-    width: 100%; 
+    width: 98%; 
     object-fit: cover;
     height: auto;
-    margin: 0 auto;
+    padding: 0 12px;
 }
+.header{
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.section{
+    float: left;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.content{
+    float: left;
+    width: 25%;
+    padding: 32px 12px;
+    box-sizing: border-box;
+}
+.content img{
+    width: 100%;
+    height: auto;
+}
+
