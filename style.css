@@ -48,6 +48,13 @@ h3{
     width: 100%;
     height: auto;
 }
+.img-hover{
+    opacity: 1;
+    transition: all .3s .1s;
+}
+.img-hover:hover{
+    opacity: 0.85;
+}
 .content a span{
     display: inline-block;
     color: hsl(206, 100%, 36%);
