@@ -1,61 +1,88 @@
-body{
+body {
     margin: 0;
-    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
-h3{
+
+h3 {
     font-size: 20px;
     font-weight: 600;
     line-height: 0;
-    padding: 1px 12px 2px 0; 
+    white-space: normal;
+    padding: 1px 12px 2px 0;
     margin: 37px 0 0;
 }
-.wrapper{
+
+.wrapper {
     margin: 0 auto;
     max-width: 85%;
 }
 
-.clearfix{
+.clearfix::after {
     clear: both;
 }
-.bigImage{
-    width: 98%; 
+
+.bigImage {
+    width: 98%;
     object-fit: cover;
     height: auto;
     padding: 0 12px;
 }
-.header{
+
+.header {
     margin: 0 auto;
-    padding: 0 6%;
-}
-.section{
-    float: left;
-    margin: 0 auto;
-    padding: 0 6%;
 }
 
-.content{
-    float: left;
-    width: 25%;
-    padding: 32px 12px;
-    box-sizing: border-box;
-    
+.section {
+    margin: 0 auto;
 }
-.content p{
+
+@media only screen and (min-width: 800px) {
+    .content {
+        float: left;
+        width: 25%;
+        padding: 32px 12px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .content {
+        float: left;
+        width: 100%;
+        padding: 32px 12px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 799px) {
+    .content {
+        float: left;
+        width: 50%;
+        padding: 32px 12px;
+        box-sizing: border-box;
+    }
+}
+
+.content p {
     padding: 2px 2px 0 0;
 }
-.content img{
+
+.content img {
     width: 100%;
     height: auto;
 }
-.img-hover{
+
+.img-hover {
     opacity: 1;
     transition: all .3s .1s;
 }
-.img-hover:hover{
+
+.img-hover:hover {
     opacity: 0.85;
 }
-.content a span{
+
+.content a span {
     display: inline-block;
     color: hsl(206, 100%, 36%);
     text-decoration: none;
@@ -63,19 +90,17 @@ h3{
     font-weight: 600;
     border-bottom: 0px solid;
     padding-bottom: 2px;
-    transition: all .3s ease-in;
+    transition: all .3s;
 }
 
-.content a span:hover{
+.content a span:hover {
     border-bottom: 2px solid;
     margin-right: 15px;
 }
 
-.content a{
+.content a {
     display: inline-block;
     font-weight: 600;
     color: hsl(206, 100%, 36%);
     text-decoration: none;
 }
-
-
