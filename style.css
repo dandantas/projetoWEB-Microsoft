@@ -7,15 +7,26 @@ body {
 h3 {
     font-size: 20px;
     font-weight: 600;
-    line-height: 0;
     white-space: normal;
     padding: 1px 12px 2px 0;
     margin: 37px 0 0;
 }
 
-.wrapper {
-    margin: 0 auto;
-    max-width: 85%;
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1085px) {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+}
+@media only screen and (max-width:1084){
+    .wrapper {
+        margin: 0 auto;
+        max-width: 100%;
+    }
 }
 
 .clearfix::after {
@@ -23,39 +34,125 @@ h3 {
 }
 
 .bigImage {
-    width: 98%;
+    width: 100%;
     object-fit: cover;
     height: auto;
-    padding: 0 12px;
 }
 
 .header {
     margin: 0 auto;
+    padding: 0 2.5%;
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.main-image-link {
+    margin: 0;
+    display: inline-block;
+    height: 0;
+}
+
+@media only screen and (min-width: 771px) {
+    .header-content {
+        background-color: rgba(255, 255, 255, 0);
+        width: 25%;
+        color: white;
+        position: absolute;
+        top: 25%;
+        right: 13%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .header-content {
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        width: auto;
+        color: white;
+        padding: 15% 2.5%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1420px) {
+    .header-content h2 {
+        font-weight: 600;
+        font-size: 46px;
+    }
+}
+
+@media only screen and (max-width: 1420px) {
+    .header-content h2 {
+        font-weight: 600;
+        font-size: 24px;
+    }
+}
+
+.header-content-text {
+    margin-bottom: 5px;
 }
 
 .section {
     margin: 0 auto;
+    padding: 0 2.5%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
 }
 
-@media only screen and (min-width: 800px) {
+.link-effect {
+    display: inline-block;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+.link-effect span {
+    margin-right: 10px;
+    font-weight: 600;
+    border-bottom: 0px solid;
+    padding-bottom: 2px;
+    transition: all .3s;
+}
+
+.link-effect span:hover {
+    border-bottom: 2px solid;
+    margin-right: 15px;
+}
+
+@media only screen and (min-width: 1085px) {
     .content {
         float: left;
         width: 25%;
         padding: 32px 12px;
         box-sizing: border-box;
     }
+    .content:first-child {
+        padding-left: 0;
+    }
+    .content:last-child {
+        padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 540px) {
     .content {
-        float: left;
+        float: none;
         width: 100%;
         padding: 32px 12px;
         box-sizing: border-box;
     }
+    .img-hover{
+        width:100%;
+    }
 }
 
-@media only screen and (min-width: 540px) and (max-width: 799px) {
+@media only screen and (min-width: 540px) and (max-width: 1085px) {
     .content {
         float: left;
         width: 50%;
