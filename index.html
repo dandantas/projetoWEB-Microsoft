@@ -13,8 +13,16 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <a href="" class="main-image-link"><img class="bigImage" src="./images/main-image.jpeg"
-                    alt="big microsoft image - carousel"></a>
+            <div class="imagem">
+                <picture>
+                    <source media="(max-width: 770px)" srcset="./images/main-image-mobile.png">
+                    <source media="(min-width: 770px) and (max-width:1085px)" srcset="./images/main-image-responsive.png">
+                    <source media="(min-width: 1085px)" srcset="./images/main-image.jpeg">
+                    <img src="./images/main-image.jpeg" alt="Main microsoft image">
+                </picture>
+
+            </div>
+
             <div class="header-content">
                 <h2 class="header-title">
                     Office 365
