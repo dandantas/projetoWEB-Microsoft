@@ -23,10 +23,7 @@ a {
     }
     .header {
         margin: 0 auto;
-        padding: 0;
         position: relative;
-        display: block;
-        max-width: 100%;
         box-sizing: border-box;
     }
 }
@@ -44,14 +41,13 @@ a {
         box-sizing: border-box;
     }
 }
-.header{
+
+.header {
     position: relative;
 }
 
-
 .imagem {
     width: 100%;
-    background-color: rgb(51, 51, 51);
 }
 
 .clearfix::after {
@@ -67,8 +63,7 @@ a {
     margin: 0 auto;
     padding: 0 2.5%;
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 100%;    
     box-sizing: border-box;
 }
 
@@ -79,19 +74,20 @@ a {
         color: white;
         position: absolute;
         top: 25%;
-        right: 13%;
+        right: 10%;
     }
 }
 
 @media only screen and (max-width: 770px) {
     .header-content {
-        display: block;
         background-color: rgb(51, 51, 51);
         text-align: center;
         width: auto;
-        height: auto;
         color: white;
         padding: 15% 2.5%;
+    }
+    .imagem{
+        background-color: rgb(51, 51, 51);
     }
 }
 
