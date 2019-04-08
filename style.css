@@ -16,6 +16,16 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    display: inline-block;
+}
+
 @media only screen and (max-width:1084) {
     .wrapper {
         margin: 0 auto;
@@ -211,4 +221,71 @@ a {
     font-weight: 600;
     color: hsl(206, 100%, 36%);
     text-decoration: none;
+}
+
+
+.navbar {
+    margin: 0 auto;
+    height: 54px;
+}
+.logo {
+    padding: 14px 6px 12px 10px;
+    float: left;
+}
+.logo img {
+    width: 108px;
+}
+.menu {
+    float: left;
+    height: 100%;
+}
+.menu ul li:first-child a {
+    padding-left: 20px;
+}
+.menu ul li a {
+    padding: 21px 8px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #262626;
+    display: inline-block;
+}
+.nav-right {
+    float: right;
+    height: 100%;
+}
+.nav-right ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 21px 8px 10px;
+    display: inline-block;
+    /* float: left; */
+}
+.todamicrosoft {
+    color: #262626;
+    /* padding-top: 22px;
+    margin-right: 15px; */
+}
+.todamicrosoft::after {
+    content: "";
+    margin-left: 8px;
+    border: solid #262626;
+    border-width: 0px 0.1px 0.1px 0px;
+    display: inline-block;
+}
+.buscar {
+    color: rgba(0, 0, 0, 0.843);
+    /* padding: 11px 0px 0px 15px; */
+}
+.carrinho {
+    color: rgba(0, 0, 0, 0.9)
+}
+.entrar {
+    font-family: Arial !important;
+    color: #333333;
+    padding-left: 12px;
+    padding-top: 25px;
+    font-size: 15px !important;
+}
+.menu-responsivo {
+    display: none;
 }
