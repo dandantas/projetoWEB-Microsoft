@@ -181,12 +181,19 @@ ul li {
     .content {
         float: left;
         width: 50%;
-        padding: 32px 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 10%;
         box-sizing: border-box;
     }
     
     .img-hover {
         width: 100%;
+    }
+    .section{
+        padding-top: 0;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
