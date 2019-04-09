@@ -180,9 +180,6 @@ ul li {
     .img-hover {
         width: 100%;
     }
-    .nav-right {
-        display: none;
-    }
 }
 
 .content p {
@@ -241,6 +238,7 @@ ul li {
 .menu {
     float: left;
     height: 100%;
+    width: 55%;
 }
 .menu ul li:first-child a {
     padding-left: 22px;
@@ -255,6 +253,11 @@ ul li {
 .nav-right {
     float: right;
     height: 100%;
+    width: 440px;
+}
+.nav-right ul {
+    height: 54px;
+
 }
 .nav-right ul li {
     height: 40px;
@@ -267,7 +270,8 @@ ul li {
 }
 .todamicrosoft {
     color: #262626;
-    padding-right: 25px;
+    padding-right: 26px;
+    padding-left: 8px;
     margin-right: 5px;
 }
 .todamicrosoft::after {
@@ -295,7 +299,7 @@ ul li {
     left: 2px;
 }
 .buscar-icone img {
-    padding-right: 20px;
+    padding-right: 25px;
 }
 .carrinho {
     color: rgba(0, 0, 0, 0.9);
@@ -309,7 +313,7 @@ ul li {
 .entrar {
     font-family: Arial !important;
     color: #333333;
-    padding-left: 12px;
+    padding-left: 20px;
     padding-top: 25px;
     font-size: 15px !important;
 }
@@ -319,8 +323,114 @@ ul li {
     height: 36px;
     position: relative;
     top: 8px;
-    left: 8px
+    left: 13px
 }
 .menu-responsivo {
     display: none;
+    cursor: pointer;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    width: 20px;
+    height: 1.5px;
+    top: 30px;
+    left: 15px;
+}
+.menu-responsivo::before, .menu-responsivo::after {
+    background: rgba(0, 0, 0, 0.8);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.menu-responsivo::before {
+    top: -5px;
+}
+
+.menu-responsivo::after {
+    bottom: -5px;
+}
+
+/* ul li:hover {
+    border-bottom: 2px solid;
+    width: calc(100% - 16px);
+} */
+
+@media only screen and (max-width: 1420px) {
+    .buscar {
+        display: none;
+    }
+    .carrinho {
+        display: none;
+    }
+    .entrar {
+        display: none;
+    }
+    .menu {
+        width: 45%;
+    }
+    .nav-right {
+        width: 280px;
+    }
+    /* .nav-right ul {
+        padding-left: 5%;
+    } */
+    .todamicrosoft {
+        padding-right: 30px;
+    }
+    .buscar-icone img {
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 1084px) {
+    .navbar {
+        padding: 0 24px;
+    }
+}
+
+@media only screen and (max-width: 859px) {
+    .todamicrosoft {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .navbar {
+        padding: 0px;
+    }
+    .logo {
+        float: none;
+        display: inline-block;
+        padding: 12px 4px;
+        /* margin: 0 50%; */
+        height: auto;
+        position: absolute;
+        left: calc(50% - 60px);
+    }
+    .nav-right {
+        width: calc(100% - 50px);
+        clear: both;
+    }
+    .nav-right ul {
+        float: right;
+    }
+    .entrar-icone {
+        padding: 6px 10px;
+        left: 0px;
+        top: 4px;
+    }
+    .carrinho-icone {
+        padding: 0px 12px;
+        /* right: 55px; */
+    }
+    .buscar-icone {
+        position: absolute;
+        top: 15px;
+        left: 60px;
+        vertical-align: sub;
+    }
+    .menu-responsivo {
+        display: block;
+    }
 }
