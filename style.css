@@ -162,11 +162,18 @@ ul li {
     .content {
         float: none;
         width: 100%;
-        padding: auto;
         box-sizing: border-box;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 10%;
     }
     .img-hover {
         width: 100%;
+    }
+    .section{
+        padding-top: 0;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
@@ -177,6 +184,7 @@ ul li {
         padding: 32px 12px;
         box-sizing: border-box;
     }
+    
     .img-hover {
         width: 100%;
     }
